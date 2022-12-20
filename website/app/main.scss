@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Lato|MedievalSharp);
+@import "~leaflet/dist/leaflet.css";
+@import './_variables.scss';
+
+body {
+	margin: 0;
+	font-family: $fontNormal;
+	background: $lightDark;
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	font-family: $fontNormal;
+}
+
+a {
+	color: $highlight;
+}
+
+#loading-container {
+	display: none;
+}
+
+#app-container {
+	display: block;
+}
+
+#load-failed {
+	font-family: sans-serif;
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 25px;
+	color: white;
+	display: none;
+
+	a {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+}

@@ -1,0 +1,33 @@
+@import '../../../variables';
+
+.lang-container {
+	img {
+		width: 40px;
+		box-shadow: $boxShadow-1;
+		cursor: pointer;
+	}
+
+
+	.lang-selector {
+		position: absolute;
+		top: 6px;
+		z-index: -1;
+		background-color: white;
+		border-radius: 8px;
+		box-shadow: $boxShadow-1;
+		padding: 8px 10px;
+		margin: 0 -10px;
+	
+		.selected-spacer {
+			width: 40px;
+			height: 22px;
+			margin-bottom: 15px;
+		}
+	}
+	
+	.hidden {
+		display: none;
+	}
+}
+
+

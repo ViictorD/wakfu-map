@@ -1,0 +1,33 @@
+.zone-result-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	cursor: pointer;
+
+	.zone-img-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+
+		img {
+			width: 22px;
+		}
+	}
+
+	.zone-name-container {
+		width: 80%;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+		p {
+			white-space: break-spaces;
+		}
+	}
+}
+
+.zone-result-container:hover {
+	background-color: #e5e5e5;
+}

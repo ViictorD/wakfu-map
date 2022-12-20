@@ -1,0 +1,16 @@
+.dragable-marker-container {
+	position: absolute;
+	bottom: 12px;
+	right: 50px;
+	border-radius: 2px;
+	background-color: white;
+	padding: 3px;
+	z-index: 998;
+	min-width: 32px;
+	min-height: 32px;
+
+	img {
+		cursor: pointer;
+		position: relative;
+	}
+}

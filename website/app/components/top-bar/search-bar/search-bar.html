@@ -1,0 +1,71 @@
+<div ref="search-container" class="search-container">
+	<div class="input-container">
+		<input ref="input" type="text" placeholder="Rechercher" />
+	</div>
+	<div class="search-btn">
+		<i class="fa-solid fa-magnifying-glass"></i>
+	</div>
+</div>
+<div ref="results-container" class="results-container">
+	<div class="input-spacer"></div>
+	<div ref="results" class="results display-none">
+		<div ref="no-result" class="no-result display-none">
+			<p ref="no-result-p">Aucun résultat</p>
+		</div>
+		<div ref="results-rows" class="results-rows">
+			<div ref="dungeons-result">
+				<div class="result-name-container">
+					<div>
+						<p ref="dungeon-name">Donjons</p>
+						<div ref="load-more-dungeons" class="plus-container">
+							<p class="load-more">+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ref="monsters-result">
+				<div class="result-name-container">
+					<div>
+						<p ref="monster-name">Monstres</p>
+						<div ref="load-more-monsters" class="plus-container">
+							<p class="load-more">+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ref="zones-result">
+				<div class="result-name-container">
+					<div>
+						<p ref="zone-name">Zones</p>
+						<div ref="load-more-zones" class="plus-container">
+							<p class="load-more">+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ref="resources-result">
+				<div class="result-name-container">
+					<div>
+						<p ref="resource-name">Ressources</p>
+						<div ref="load-more-resources" class="plus-container">
+							<p class="load-more">+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div ref="npcs-result">
+				<div class="result-name-container">
+					<div>
+						<p ref="npc-name">PNJ's</p>
+						<div ref="load-more-npcs" class="plus-container">
+							<p class="load-more">+</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mobile-icon-container">
+	<i class="fa-solid fa-magnifying-glass"></i>
+</div>

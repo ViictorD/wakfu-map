@@ -1,0 +1,14 @@
+.env
+
+docker/sql_dump/*
+!docker/sql_dump/.gitkeep
+
+website/public/*
+!website/public/index.html
+!website/public/down.html
+!website/public/en
+
+website/logs/*
+website/server/logs/*
+
+**/node_modules/*

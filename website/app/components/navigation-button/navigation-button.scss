@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.navigation-button-container {
+	position: absolute;
+	top: 65px;
+	left: 15px;
+	z-index: 999;
+
+	.back-button-container {
+		border-radius: 8px;
+		box-shadow: $boxShadow-1;
+		padding: 10px 15px;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		display: none;
+		
+		p {
+			margin: 0 0 0 5px;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+	}
+
+	.back-button-container:hover {
+		background-color: $principalSecondary;
+	}
+}

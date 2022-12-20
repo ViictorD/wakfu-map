@@ -1,0 +1,150 @@
+@import '../../../variables';
+
+.search-container {
+	background: white;
+	border-radius: 8px;
+	box-shadow: $boxShadow-1;
+	display: flex;
+	align-items: center;
+	padding: 6px;
+	background-color: #e5e5e5;
+	z-index: 1;
+
+	.input-container {
+		display: flex;
+		align-items: center;
+		height: 24px;
+		margin-left: 10px;
+
+		input {
+			width: 320px;
+			border: none;
+			font-size: 15px;
+			background-color: #e5e5e5;
+		}
+
+		input:focus {
+			outline: none;
+		}
+	}
+
+	.search-btn {
+		padding: 0 10px;
+		cursor: pointer;
+	}
+}
+
+.results-container {
+	display: none;
+	position: absolute;
+	top: 0;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: $boxShadow-1;
+	padding: 8px 0 8px 10px;
+	width: 398px;
+	max-width: 398px;
+
+	.input-spacer {
+		width: 378px;
+		height: 36px;
+		margin-right: 10px;
+	}
+
+	.results {
+		margin-top: 10px;
+		
+	}
+
+	.display-none {
+		display: none !important;
+	}
+
+	.no-result {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin: 10px 0 0 0;
+
+		p {
+			margin: 10px 0;
+		}
+	}
+
+	.results-rows {
+		overflow-y: scroll;
+		max-height: 300px;
+
+		> div {
+			.result-name-container {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				position: relative;
+
+				> div {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+					> p {
+						font-weight: 700;
+						text-align: center;
+						margin: 5px 0;
+					}
+
+					.plus-container {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 20px;
+						height: 20px;
+						cursor: pointer;
+						position: absolute;
+						right: 0px;
+	
+						.load-more {
+							font-size: 20px;
+						}
+					}
+				}
+
+			}
+
+			> div p {
+				margin: 13px 0;
+			}
+		}
+	}
+
+	.results-rows::-webkit-scrollbar {
+		width: 28px;
+	}
+
+	.results-rows::-webkit-scrollbar-thumb {
+		background: $grey;
+		border-radius: 999px;
+		border: 10px solid transparent;
+		background-clip: padding-box;
+	}
+}
+
+.mobile-icon-container {
+	display: none;
+	// background-color: $principalSecondary;
+	border-radius: 6px;
+	padding: 10px;
+}
+
+.mobile-icon-container:hover {
+	background-color: $principalSecondary;
+	cursor: pointer;
+}
+
+// @media(max-width: 1055px) {
+
+// 	.mobile-icon-container {
+// 		display: block;
+// 	}
+// }

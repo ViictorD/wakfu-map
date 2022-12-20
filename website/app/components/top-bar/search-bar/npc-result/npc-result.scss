@@ -1,0 +1,33 @@
+.npc-result-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	border-radius: 8px;
+	cursor: pointer;
+
+	.npc-img-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 20%;
+
+		img {
+			width: 30px;
+		}
+	}
+
+	.npc-name-container {
+		width: 80%;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+		p {
+			white-space: break-spaces;
+		}
+	}
+}
+
+.npc-result-container:hover {
+	background-color: #e5e5e5;
+}
